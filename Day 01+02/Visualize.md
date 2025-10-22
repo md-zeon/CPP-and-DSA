@@ -1,189 +1,128 @@
 # Day 01+02: C++ Basics Visualization
 
-This file provides visual representations and diagrams to help understand the concepts and code flow in `cppBasics.cpp`. Since this is text-based, we'll use ASCII art, flowcharts described in text, and simple diagrams.
+This file provides visual representations using Mermaid diagrams to help understand the concepts and code flow in `cppBasics.cpp`.
 
 ## 1. Basic Program Structure
 
-A typical C++ program structure:
-
-```
-[Start]
-   |
-   v
-[Preprocessor Directives]
-   e.g., #include <iostream>
-   |
-   v
-[Namespace Declaration]
-   e.g., using namespace std;
-   |
-   v
-[int main()]
-   |
-   v
-[Code Body]
-   - Variables
-   - Input/Output
-   - Calculations
-   |
-   v
-[return 0;]
-   |
-   v
-[End]
+```mermaid
+flowchart TD
+    A([Start]) --> B[Preprocessor Directives<br/>#include iostream]
+    B --> C[Namespace Declaration<br/>using namespace std]
+    C --> D[int main]
+    D --> E[Variables Declaration]
+    E --> F[Input/Output Operations]
+    F --> G[Calculations & Logic]
+    G --> H[return 0]
+    H --> I([End])
 ```
 
-## 2. Area of a Square Visualization
+## 2. Area of a Square Calculation
 
-**Flowchart:**
-
-```
-Start
-  |
-  v
-Input: n (side length)
-  |
-  v
-Calculate: area = n * n
-  |
-  v
-Output: "Area of a square is = " + area
-  |
-  v
-End
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input: n side length/]
+    B --> C[Calculate: area = n × n]
+    C --> D[/Output: Area of square = area/]
+    D --> E([End])
+    
+    style A fill:#90EE90
+    style E fill:#FFB6C1
+    style C fill:#87CEEB
 ```
 
-**ASCII Diagram:**
+**Formula Visualization:**
 
-```
-   +-----+
-   |     |
-   |  n  |
-   |     |
-   +-----+
-     |
-     | * n
-     v
-   +-----+
-   |     |
-   |area |
-   |     |
-   +-----+
+```mermaid
+graph LR
+    A[n] -->|multiply| B[n]
+    B --> C[area = n²]
+    
+    style C fill:#FFD700
 ```
 
-## 3. Total Bill with GST Visualization
+## 3. Total Bill with GST Calculation
 
-**Flowchart:**
-
-```
-Start
-  |
-  v
-Input: pencil, pen, eraser
-  |
-  v
-Calculate: bill = pencil + pen + eraser
-  |
-  v
-Calculate: gst = bill * 0.18
-  |
-  v
-Calculate: bill = bill - gst  (Note: Typically add GST)
-  |
-  v
-Output: "Total Bill = " + bill
-  |
-  v
-End
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input: pencil, pen, eraser/]
+    B --> C[Calculate: bill = pencil + pen + eraser]
+    C --> D[Calculate: gst = bill × 0.18]
+    D --> E[Calculate: finalBill = bill + gst]
+    E --> F[/Output: Total Bill = finalBill/]
+    F --> G([End])
+    
+    style A fill:#90EE90
+    style G fill:#FFB6C1
+    style D fill:#FFA500
 ```
 
-**ASCII Diagram:**
+## 4. Simple Interest Calculator
 
-```
-pencil + pen + eraser
-     |
-     v
-   bill
-     |
-     | * 0.18
-     v
-    gst
-     |
-     | bill - gst
-     v
-  Final Bill
-```
-
-## 4. Simple Interest Calculator Visualization
-
-**Flowchart:**
-
-```
-Start
-  |
-  v
-Input: p (principal), r (rate), t (time)
-  |
-  v
-Calculate: interest = (p * r * t) / 100
-  |
-  v
-Output: "Interest is = " + interest
-  |
-  v
-End
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input: principal p/]
+    B --> C[/Input: rate r/]
+    C --> D[/Input: time t/]
+    D --> E["Calculate: interest = (p × r × t) / 100"]
+    E --> F[/Output: Simple Interest/]
+    F --> G([End])
+    
+    style A fill:#90EE90
+    style G fill:#FFB6C1
+    style E fill:#87CEEB
 ```
 
-**ASCII Diagram:**
+**Formula Breakdown:**
 
-```
-   p    r    t
-    \   /   /
-     \ /   /
-      *   /
-       \ /
-        |
-       /100
-        |
-     interest
-```
-
-## 5. Area of a Circle Visualization
-
-**Flowchart:**
-
-```
-Start
-  |
-  v
-Input: radius
-  |
-  v
-Calculate: area = 3.14 * radius * radius
-  |
-  v
-Output: "Area of circle is = " + area
-  |
-  v
-End
+```mermaid
+graph TD
+    A[Principal p] --> D[Multiply]
+    B[Rate r] --> D
+    C[Time t] --> D
+    D --> E[Product]
+    E --> F[Divide by 100]
+    F --> G[Simple Interest]
+    
+    style G fill:#FFD700
 ```
 
-**ASCII Diagram:**
+## 5. Area of a Circle Calculation
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input: radius/]
+    B --> C["Calculate: area = π × radius²<br/>(π = 3.14)"]
+    C --> D[/Output: Area of circle/]
+    D --> E([End])
+    
+    style A fill:#90EE90
+    style E fill:#FFB6C1
+    style C fill:#87CEEB
 ```
-   radius
-     |
-     | * radius
-     v
-  radius^2
-     |
-     | * 3.14
-     v
-    area
+
+**Visual Representation:**
+
+```mermaid
+graph LR
+    A[radius] --> B[Square: radius²]
+    B --> C["Multiply by π (3.14)"]
+    C --> D[Circle Area]
+    
+    style D fill:#FFD700
 ```
 
-## Visual Tips
+## 6. Average Marks Calculator
 
-- Use tools like Draw.io or Lucidchart for graphical flowcharts.
-- For code visualization, tools like Code2Flow can generate diagrams from code.
-- Practice drawing these on paper to reinforce understanding.
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input: English marks/]
+    B --> C[/Input: Science marks/]
+    C --> D[/Input: Math marks/]
+    D --> E["Calculate: average = (eng + sci + math) / 3.0"]
+    E --> F[/Output: Average marks/]
+    F --> G([End])
+    
+    style A fill:#90EE90
+    style G fill:#FFB6C1
+    style E fill:#87CEEB
+```
