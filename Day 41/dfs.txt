@@ -1,0 +1,30 @@
+Depth First Search (DFS):
+DFS is a traversal algorithm that uses a stack to traverse the graph. It starts at a given node
+and explores as far as possible along each branch before backtracking.
+
+The Algorithm works as follows:
+1. Choose a starting node.
+2. Mark the starting node as visited.
+3. Explore the neighbors of the starting node.
+4. For each neighbor that has not been visited, mark it as visited and repeat steps 3
+5. Backtrack to the previous node when all neighbors have been visited.
+
+Algorithm:
+
+Algorithm DFS(source, visited)
+{
+    visited[source] = true
+    print source
+    for (v : adj[source])
+    {
+        if (!visited[v])
+        {
+            DFS(v, visited)
+        }
+    }
+}
+
+
+Complexity:
+The time complexity of BFS is O(V + E), where V is the number of vertices and E is the number of edges.
+The space complexity is O(V), as we need to store the visited status of each vertex in the visited array.

@@ -1,0 +1,36 @@
+Breath First Search (BFS):
+BFS is a traversal algorithm that explores a graph level by level, starting from a given source node
+It uses a queue data structure to keep track of nodes to visit next
+The algorithm works as follows:
+1.  Create a queue and enqueue the source node
+2.  Mark the source node as visited
+3.  While the queue is not empty, dequeue a node and visit it
+4.  Enqueue all unvisited neighbors of the dequeued node
+5.  Repeat steps 3-4 until the queue is empty
+
+Algorithm:
+Algorithm BFS()
+{
+    queue q
+    visited = new boolean[V] // V is the number of vertices in the graph
+    while (!q.empty())
+    {
+        u = q.top()
+        q.pop()
+        print u
+        for each v in adj[u] // adj[u] is the adjacency list of node u
+        {
+            if (!visited[v])
+            {
+                q.push(v);
+                visited[v] = true
+            }
+        }
+    }
+    print new line
+}
+
+
+Time Complexity:
+The time complexity of BFS is O(V + E), where V is the number of vertices and E is the number of edges.
+The space complexity is O(V), as we need to store the visited status of each vertex in the visited array.
