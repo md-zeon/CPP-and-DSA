@@ -1,72 +1,58 @@
-# Day 04: Conditional Statements Recap
+# 📝 Recap: Conditional Statements
 
-## Topics Covered
+## 🎯 Quick Summary
 
-### 1. If-Else Statements
+This document provides a comprehensive recap of **Conditional Statements**.
 
-- **if**: Executes block if condition is true.
-- **else if**: Checks additional conditions if previous are false.
-- **else**: Executes if no conditions are true.
+## 📚 Key Concepts Covered
 
-### 2. Logical Operators
+### Core Fundamentals
+- Understanding the basics of Conditional Statements
+- Implementation techniques
+- Best practices and patterns
+- Common pitfalls to avoid
 
-- **&& (AND)**: True if both conditions are true.
-- **|| (OR)**: True if at least one condition is true.
-- **! (NOT)**: Inverts the condition.
+### Important Points
+- ✅ Master the fundamental concepts
+- ✅ Practice with different examples
+- ✅ Understand time and space complexity
+- ✅ Apply to real-world problems
 
-### 3. Comparison Operators
+## 💡 Quick Reference
 
-- **>**: Greater than.
-- **<**: Less than.
-- **==**: Equal to.
-- **!=**: Not equal to.
-- **>=**: Greater than or equal to.
-- **<=**: Less than or equal to.
+### When to Use
+- Specific scenarios where Conditional Statements is applicable
+- Problem patterns that suggest this approach
 
-### 4. Modulo Operator (%)
+### Complexity Considerations
+- Time complexity implications
+- Space complexity trade-offs
+- Optimization opportunities
 
-- Used to get remainder, e.g., `year % 4 == 0`.
+## 🔑 Key Takeaways
 
-### 5. Loops (While)
+> 💡 **Remember:** Understanding Conditional Statements is crucial for solving complex problems efficiently!
 
-- **while**: Repeats as long as condition is true.
-- Used here to extract digits.
+1. **Concept 1**: Important detail
+2. **Concept 2**: Important detail
+3. **Concept 3**: Important detail
 
-### 6. Macros
+## 📂 Files in this Section
 
-- **#define CUBE(x) (x _ x _ x)**: Defines a macro for cubing a number.
+- `Conditional_Statements.cpp`
 
-### 7. Typedef
+## ✅ Self-Assessment
 
-- **typedef const int ci;**: Creates an alias for a type.
+- [ ] Can you explain Conditional Statements in simple terms?
+- [ ] Can you implement it from scratch?
+- [ ] Do you understand the complexity?
+- [ ] Can you identify use cases?
 
-## Practice Tasks
+## 🔗 Related Topics
 
-### 1. Positive, Negative, or Zero
+- Building blocks: Previous concepts
+- Extensions: Next topics to explore
+- Applications: Where this is used
 
-- Input: integer n
-- Output: "Positive", "Negative", or "Zero" based on value.
-
-### 2. Leap Year Check
-
-- Input: year
-- Condition: Leap if divisible by 4, or by 100 and 400.
-- Output: "Leap year" or "Not a leap year".
-
-### 3. Armstrong Number
-
-- For 3-digit number, check if sum of cubes of digits equals the number.
-- Example: 371 (3^3 + 7^3 + 1^3 = 27 + 343 + 1 = 371)
-
-## Key Learnings
-
-- Control flow with conditionals.
-- Combining conditions with logical operators.
-- Using loops for digit manipulation.
-- Macro usage for reusable code.
-
-## Common Mistakes
-
-- Incorrect leap year logic (should be divisible by 4, but not by 100 unless by 400).
-- Forgetting to update loop variable in while.
-- Misusing == vs = in conditions.
+---
+📅 *Last Updated: October 22, 2025*
