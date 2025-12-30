@@ -18,7 +18,7 @@
 - **Minimum total weight** among all possible spanning trees
 - **Tree**: Exactly V-1 edges for V vertices
 
-### Applications:
+### Applications
 
 1. **Network design** (minimum cost connections)
 2. **Circuit design** (minimum wire length)
@@ -27,14 +27,14 @@
 
 ## 2. Prim's Algorithm
 
-### Algorithm Overview:
+### Algorithm Overview
 
 - **Greedy approach** to build MST
 - **Start from arbitrary vertex**
 - **Grow MST** by adding minimum weight edge
 - **Use priority queue** to select next edge
 
-### Implementation:
+### Implementation
 
 ```cpp
 void primsAlgo(int src) {
@@ -72,14 +72,14 @@ void primsAlgo(int src) {
 
 ## 3. Kruskal's Algorithm
 
-### Algorithm Overview:
+### Algorithm Overview
 
 - **Sort all edges** by weight
 - **Add edges** in increasing order
 - **Skip edges** that form cycles
 - **Use Union-Find** for cycle detection
 
-### Union-Find (Disjoint Set Union):
+### Union-Find (Disjoint Set Union)
 
 ```cpp
 class DSU {
@@ -111,7 +111,7 @@ class DSU {
 };
 ```
 
-### Kruskal's Implementation:
+### Kruskal's Implementation
 
 ```cpp
 int minCostConnectPoints(vector<vector<int>>& points) {
